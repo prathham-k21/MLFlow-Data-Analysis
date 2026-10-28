@@ -1,0 +1,22 @@
+{
+    "dataset_name": "FinTech Lending & Credit Default Risk Dataset",
+    "domain": "Financial Services / Credit Risk",
+    "reference_records": 5000,
+    "current_records": 5000,
+    "features": [
+        "annual_income",
+        "debt_to_income_ratio",
+        "credit_score",
+        "loan_amount",
+        "interest_rate",
+        "employment_length_years",
+        "revolving_balance",
+        "num_derogatory_records",
+        "home_ownership",
+        "loan_purpose",
+        "loan_default"
+    ],
+    "target": "loan_default",
+    "reference_default_rate": 0.1116,
+    "current_default_rate": 0.7168
+}

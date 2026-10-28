@@ -1,0 +1,176 @@
+{
+    "metadata": {
+        "course": "ML DevOps (UAMPC0703)",
+        "assignment": "Theory-ISE 2: MLflow Data Drift Analysis",
+        "student_name": "Pratham Kadam",
+        "roll_number": "DS 14",
+        "prn": "2324000362",
+        "class_branch": "CSE (Data Science) Final Year - Sem VII",
+        "academic_year": "2026-27",
+        "github_repository": "https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis",
+        "domain": "Financial Services / FinTech Credit Default Risk",
+        "model_type": "GradientBoostingClassifier"
+    },
+    "environment": {
+        "os": "Windows 11 (64-bit)",
+        "python_version": "3.13.0",
+        "mlflow_version": "3.13.0"
+    },
+    "baseline_metrics": {
+        "baseline_accuracy": 0.891,
+        "baseline_precision": 0.5789,
+        "baseline_recall": 0.0982,
+        "baseline_f1_score": 0.1679,
+        "baseline_roc_auc": 0.7853,
+        "baseline_brier_score": 0.0856
+    },
+    "production_metrics": {
+        "production_accuracy": 0.693,
+        "production_precision": 0.8697,
+        "production_recall": 0.6724,
+        "production_f1_score": 0.7585,
+        "production_roc_auc": 0.773,
+        "roc_auc_drop_pct": 1.57,
+        "f1_score_drop_pct": -351.76
+    },
+    "drift_summary": {
+        "total_numerical_features": 8,
+        "drifted_numerical_features": 8,
+        "drifted_features_ratio": 1.0,
+        "max_ks_statistic": 0.6234,
+        "max_psi_score": 2.388,
+        "prediction_drift": {
+            "ref_mean_prob": 0.1104,
+            "cur_mean_prob": 0.52,
+            "ks_statistic": 0.6654,
+            "p_value": 0.0,
+            "psi_score": 2.7359,
+            "wasserstein_distance": 0.4097,
+            "prediction_drift_detected": true
+        },
+        "overall_data_drift_detected": true,
+        "concept_drift_detected": false
+    },
+    "numerical_drift_table": [
+        {
+            "feature": "annual_income",
+            "ks_statistic": 0.2084,
+            "p_value": 2.030589974447207e-95,
+            "p_value_sci": "2.03e-95",
+            "psi_score": 0.2496,
+            "psi_status": "Moderate Drift (0.10-0.25)",
+            "wasserstein_distance": 12372.1715,
+            "reference_mean": 66327.78,
+            "current_mean": 53955.61,
+            "mean_pct_change": -18.65,
+            "drift_detected": true
+        },
+        {
+            "feature": "debt_to_income_ratio",
+            "ks_statistic": 0.4978,
+            "p_value": 0.0,
+            "p_value_sci": "0.00e+00",
+            "psi_score": 1.45,
+            "psi_status": "Severe Drift (>=0.25)",
+            "wasserstein_distance": 8.3598,
+            "reference_mean": 18.45,
+            "current_mean": 26.81,
+            "mean_pct_change": 45.31,
+            "drift_detected": true
+        },
+        {
+            "feature": "credit_score",
+            "ks_statistic": 0.425,
+            "p_value": 0.0,
+            "p_value_sci": "0.00e+00",
+            "psi_score": 1.0362,
+            "psi_status": "Severe Drift (>=0.25)",
+            "wasserstein_distance": 52.316,
+            "reference_mean": 710.46,
+            "current_mean": 658.15,
+            "mean_pct_change": -7.36,
+            "drift_detected": true
+        },
+        {
+            "feature": "loan_amount",
+            "ks_statistic": 0.2858,
+            "p_value": 2.8375019948333006e-180,
+            "p_value_sci": "2.84e-180",
+            "psi_score": 0.4627,
+            "psi_status": "Severe Drift (>=0.25)",
+            "wasserstein_distance": 4524.402,
+            "reference_mean": 15122.82,
+            "current_mean": 19647.22,
+            "mean_pct_change": 29.92,
+            "drift_detected": true
+        },
+        {
+            "feature": "interest_rate",
+            "ks_statistic": 0.6234,
+            "p_value": 0.0,
+            "p_value_sci": "0.00e+00",
+            "psi_score": 2.388,
+            "psi_status": "Severe Drift (>=0.25)",
+            "wasserstein_distance": 4.8946,
+            "reference_mean": 10.46,
+            "current_mean": 15.35,
+            "mean_pct_change": 46.8,
+            "drift_detected": true
+        },
+        {
+            "feature": "employment_length_years",
+            "ks_statistic": 0.2126,
+            "p_value": 2.5712952387745486e-99,
+            "p_value_sci": "2.57e-99",
+            "psi_score": 0.291,
+            "psi_status": "Severe Drift (>=0.25)",
+            "wasserstein_distance": 1.8612,
+            "reference_mean": 6.66,
+            "current_mean": 4.8,
+            "mean_pct_change": -27.96,
+            "drift_detected": true
+        },
+        {
+            "feature": "revolving_balance",
+            "ks_statistic": 0.1932,
+            "p_value": 5.552309147741666e-82,
+            "p_value_sci": "5.55e-82",
+            "psi_score": 0.2405,
+            "psi_status": "Moderate Drift (0.10-0.25)",
+            "wasserstein_distance": 5858.8639,
+            "reference_mean": 8432.27,
+            "current_mean": 14291.13,
+            "mean_pct_change": 69.48,
+            "drift_detected": true
+        },
+        {
+            "feature": "num_derogatory_records",
+            "ks_statistic": 0.221,
+            "p_value": 2.367972602908452e-107,
+            "p_value_sci": "2.37e-107",
+            "psi_score": 0.2078,
+            "psi_status": "Moderate Drift (0.10-0.25)",
+            "wasserstein_distance": 0.378,
+            "reference_mean": 0.34,
+            "current_mean": 0.72,
+            "mean_pct_change": 110.39,
+            "drift_detected": true
+        }
+    ],
+    "categorical_drift_table": [
+        {
+            "feature": "home_ownership",
+            "chi2_statistic": 400.3071,
+            "p_value": 1.186937774953167e-87,
+            "p_value_sci": "1.19e-87",
+            "drift_detected": true
+        },
+        {
+            "feature": "loan_purpose",
+            "chi2_statistic": 239.439,
+            "p_value": 1.2253527115072132e-50,
+            "p_value_sci": "1.23e-50",
+            "drift_detected": true
+        }
+    ]
+}
