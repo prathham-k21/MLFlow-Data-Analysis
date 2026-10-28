@@ -7,7 +7,7 @@
 **PRN:** 2324000362  
 **Class & Branch:** Final Year B.Tech CSE (Data Science) - Semester VII  
 **Academic Year:** 2026-27  
-**GitHub Repository:** [https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis](https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis)
+**GitHub Repository:** [https://github.com/prathham-k21/MLFlow-Data-Analysis](https://github.com/prathham-k21/MLFlow-Data-Analysis)
 
 ---
 
@@ -124,8 +124,8 @@ $$PSI = \sum_{i=1}^k \left(Actual\%_i - Expected\%_i\right) \times \ln\left(\fra
 ### 1. Prerequisites
 Ensure Python 3.10+ is installed. Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis.git
-cd MLOps-MLflow-Drift-Analysis
+git clone https://github.com/prathham-k21/MLFlow-Data-Analysis.git
+cd MLFlow-Data-Analysis
 pip install -r requirements.txt
 ```
 

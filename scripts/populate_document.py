@@ -55,7 +55,7 @@ def populate_word_document():
         ("Roll Number(s)", "DS 14 (PRN: 2324000362)"),
         ("Department / Class", "Final Year B.Tech CSE (Data Science) - Semester VII"),
         ("Academic Year", "A.Y 2026-27"),
-        ("GitHub Repository URL", "https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis")
+        ("GitHub Repository URL", "https://github.com/prathham-k21/MLFlow-Data-Analysis")
     ]
     
     for i, (label, val) in enumerate(details_data, start=1):
@@ -177,7 +177,7 @@ def populate_word_document():
 
         # 5. GitHub Repository and Reproducibility
         elif txt == "GitHub Repository URL:":
-            append_answer(p, "https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis", is_bold=True)
+            append_answer(p, "https://github.com/prathham-k21/MLFlow-Data-Analysis", is_bold=True)
         elif txt == "Source code / Notebook:":
             append_answer(p, "Complete modular source code in 'src/' (generate_data.py, train.py, drift_detector.py, run_pipeline.py) and interactive Jupyter Notebook in 'notebooks/mlflow_data_drift_analysis.ipynb'.")
         elif txt == "README and execution instructions:":

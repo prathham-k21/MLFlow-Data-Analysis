@@ -20,7 +20,7 @@ def create_notebook():
                 '**Class & Branch:** Final Year B.Tech CSE (Data Science) - Semester VII  \n',
                 '**Academic Year:** 2026-27  \n',
                 '**Domain:** Financial Services / FinTech Credit Default Risk & Loan Assessment  \n',
-                '**GitHub Repository:** [https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis](https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis)\n',
+                '**GitHub Repository:** [https://github.com/prathham-k21/MLFlow-Data-Analysis](https://github.com/prathham-k21/MLFlow-Data-Analysis)\n',
                 '---\n'
             ]
         },

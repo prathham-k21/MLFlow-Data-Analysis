@@ -7,7 +7,7 @@
         "prn": "2324000362",
         "class_branch": "CSE (Data Science) Final Year - Sem VII",
         "academic_year": "2026-27",
-        "github_repository": "https://github.com/prathamkadam/MLOps-MLflow-Drift-Analysis",
+        "github_repository": "https://github.com/prathham-k21/MLFlow-Data-Analysis",
         "domain": "Financial Services / FinTech Credit Default Risk",
         "model_type": "GradientBoostingClassifier"
     },
